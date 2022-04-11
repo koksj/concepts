@@ -1,6 +1,6 @@
 # Lambda based Builder Pattern
 
-## Language: Java 17
+## Programming Language: Java 17
 
 The Builder Pattern is a Creational Pattern described by  (Gamma et al., 2016).  This is an implementation of the builder pattern based on (Mulley 2022) whose implementation is Lambda orientated. The emphasis in this implementation based on Mulley's is applying the general guidelines for making an object immutable as documented in the OCP study guide.
 
