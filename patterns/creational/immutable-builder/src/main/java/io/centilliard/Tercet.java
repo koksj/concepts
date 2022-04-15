@@ -4,9 +4,9 @@
  * 
  * Copyright (C) 2020 Sefan Kok. All Rights Reserved.
  * 
- * This file is part of Generic Builder Pattern.
+ * This file is part of Immutable Builder.
  * 
- * Generic Builder Pattern is free software; you can redistribute it and/or modify it under the terms of the 
+ * Immutable Builder is free software; you can redistribute it and/or modify it under the terms of the 
  * GNU General Public License as published by the Free Software Foundation; version 2.
  * 
  * This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even
@@ -19,17 +19,8 @@
 
 package io.centilliard;
 
-
-public class App {
-
-    public static void main(String[] args) throws Exception {
-
-        Person person = GenericBuilder.of(Person::new)
-                .with(Person::setId, "1")
-                .with(Person::setName, "Albert")
-                .with(Person::setSurname, "Einstein")
-                .build();
-
-        System.out.println(person);    
-    }
+@FunctionalInterface
+public interface Tercet<T, U, V, W> {
+    
+    T get(U u,V v, W w);
 }

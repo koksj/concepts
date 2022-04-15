@@ -4,9 +4,9 @@
  * 
  * Copyright (C) 2020 Sefan Kok. All Rights Reserved.
  * 
- * This file is part of Generic Builder Pattern.
+ * This file is part of Immutable Builder.
  * 
- * Generic Builder Pattern is free software; you can redistribute it and/or modify it under the terms of the 
+ * Immutable Builder is free software; you can redistribute it and/or modify it under the terms of the 
  * GNU General Public License as published by the Free Software Foundation; version 2.
  * 
  * This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even
@@ -19,42 +19,33 @@
 
 package io.centilliard;
 
-public class Person {
+public final class Student {
 
-    private String id;
-    private String name;
-    private String surname;
+    private final String id;
+    private final String name;
+    private final String surname;
 
-    public Person() {
+    public Student(String id, String name, String surname) {
+        this.id = id;
+        this.name = name;
+        this.surname = surname;
     }
 
     public String getId() {
         return id;
     }
 
-    public void setId(String id) {
-        this.id = id;
-    }
-
     public String getName() {
         return name;
     }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
+    
     public String getSurname() {
         return surname;
     }
-
-    public void setSurname(String surname) {
-        this.surname = surname;
-    }
-
+ 
     @Override
     public String toString() {
-        return "Person [id=" + id + ", name=" + name + ", surname=" + surname + "]";
+        return "Student [description=" + surname + ", id=" + id + ", name=" + name + "]";
     }
-
+        
 }
