@@ -8,6 +8,13 @@ Listed below are changes made to the original code:
 1. Class access modifier change to final to prevent the class from being extended and improve security. 
 2. The constructor access modifier changed to private to prevent instantiation of the class.
 
+## Advantages
+
+
+
+
+## Disadvantages
+
 
 # Bibliography
 

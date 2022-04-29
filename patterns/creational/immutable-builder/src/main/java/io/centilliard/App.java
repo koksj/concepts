@@ -32,8 +32,8 @@ public class App {
         /** 
          * Instantiate the immutable Student object using ImmutableBuilder class
          */        
-        Student part = ImmutableBuilder.of(Student::new, "e8d43f07-0a64-414c-b70a-cd5213a7bc52", "Jack", "Ryder");        
-        System.out.println(part);
+        Student student = ImmutableBuilder.of(Student::new, "e8d43f07-0a64-414c-b70a-cd5213a7bc52", "Jack", "Ryder");        
+        System.out.println(student);
 
     }
 }
